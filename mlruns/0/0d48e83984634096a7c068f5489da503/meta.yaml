@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/GitHub_Repo/housing_price_prediction/mlruns/0/0d48e83984634096a7c068f5489da503/artifacts
+end_time: 1722928605570
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0d48e83984634096a7c068f5489da503
+run_name: wise-wasp-295
+run_uuid: 0d48e83984634096a7c068f5489da503
+start_time: 1722928599984
+status: 3
+user_id: asang
+tags: []
+source_type: 4
+source_name: ''
+entry_point_name: ''
+source_version: ''
