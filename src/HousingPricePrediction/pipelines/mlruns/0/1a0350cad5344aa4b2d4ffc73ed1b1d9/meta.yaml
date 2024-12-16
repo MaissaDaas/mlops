@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/mlops/src/HousingPricePrediction/pipelines/mlruns/0/1a0350cad5344aa4b2d4ffc73ed1b1d9/artifacts
+end_time: 1734382915557
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1a0350cad5344aa4b2d4ffc73ed1b1d9
+run_name: inquisitive-mole-28
+run_uuid: 1a0350cad5344aa4b2d4ffc73ed1b1d9
+start_time: 1734382909645
+status: 3
+user_id: codespace
+tags: []
+source_type: 4
+source_name: ''
+entry_point_name: ''
+source_version: ''

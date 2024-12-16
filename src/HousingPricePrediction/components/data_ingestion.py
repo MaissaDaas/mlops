@@ -34,7 +34,8 @@ class DataIngestion:
         logging.info("Data ingestion started")
        
         try:
-            data = load_dataframe("notebooks/data", "Housing.csv")
+            # data = load_dataframe("notebooks/data", "Housing.csv")
+            data = load_dataframe("/workspaces/mlops/notebooks/data", "Housing.csv")
             logging.info("Dataset loaded into dataframe")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)), exist_ok=True)

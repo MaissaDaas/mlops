@@ -1,0 +1,31 @@
+[2024-12-16 21:05:25,462] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.11.72:8000
+[2024-12-16 21:05:25,462] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-12-16 21:05:34,222] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:05:34] "GET / HTTP/1.1" 200 -
+[2024-12-16 21:05:34,554] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:05:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-16 21:05:50,322] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:05:50] "GET /predict HTTP/1.1" 200 -
+[2024-12-16 21:07:23,058] 77 root - INFO - Custom input is converted to Dataframe: 
+     area  bedrooms  bathrooms  stories mainroad  ... hotwaterheating airconditioning parking prefarea  furnishingstatus
+0  1500.0       3.0        2.0      2.0      yes  ...             yes             yes     2.0      yes         furnished
+
+[1 rows x 12 columns]
+[2024-12-16 21:07:23,058] 14 root - INFO - Prediction Pipeline initiated
+[2024-12-16 21:07:23,059] 75 root - INFO - Object read and loaded from artifacts/preprocessor.pkl
+[2024-12-16 21:07:23,143] 75 root - INFO - Object read and loaded from artifacts/model.pkl
+[2024-12-16 21:07:23,151] 25 root - INFO - Predicted value: [7646624.01021166]
+[2024-12-16 21:07:23,152] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:07:23] "POST /predict HTTP/1.1" 200 -
+[2024-12-16 21:13:31,726] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:13:31] "GET /predict HTTP/1.1" 200 -
+[2024-12-16 21:13:33,852] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:13:33] "GET /predict HTTP/1.1" 200 -
+[2024-12-16 21:13:38,198] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:13:38] "GET /predict HTTP/1.1" 200 -
+[2024-12-16 21:13:47,856] 77 root - INFO - Custom input is converted to Dataframe: 
+     area  bedrooms  bathrooms  stories mainroad  ... hotwaterheating airconditioning parking prefarea  furnishingstatus
+0  1500.0       3.0        2.0      2.0      yes  ...             yes             yes     2.0      yes         furnished
+
+[1 rows x 12 columns]
+[2024-12-16 21:13:47,856] 14 root - INFO - Prediction Pipeline initiated
+[2024-12-16 21:13:47,857] 75 root - INFO - Object read and loaded from artifacts/preprocessor.pkl
+[2024-12-16 21:13:47,857] 75 root - INFO - Object read and loaded from artifacts/model.pkl
+[2024-12-16 21:13:47,862] 25 root - INFO - Predicted value: [7646624.01021166]
+[2024-12-16 21:13:47,862] 97 werkzeug - INFO - 127.0.0.1 - - [16/Dec/2024 21:13:47] "POST /predict HTTP/1.1" 200 -

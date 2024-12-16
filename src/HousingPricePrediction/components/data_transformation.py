@@ -10,7 +10,8 @@ from src.HousingPricePrediction.logger import logging
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+# from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import OrdinalEncoder, StandardScaler  
 from src.HousingPricePrediction.utils.utils import save_object
 
 @dataclass
@@ -66,7 +67,16 @@ class DataTransformation:
             cat_pipeline = Pipeline(
                 steps=[
                     ('imputer', SimpleImputer(strategy='most_frequent')),
-                    ('labelencoder', LabelEncoder())
+                    # ('labelencoder', LabelEncoder())
+                    ('ordinal_encoder', OrdinalEncoder(categories=[
+                        ['yes', 'no'],  # mainroad
+                        ['yes', 'no'],  # guestroom
+                        ['yes', 'no'],  # basement
+                        ['yes', 'no'],  # hotwaterheating
+                        ['yes', 'no'],  # airconditioning
+                        ['yes', 'no'],  # prefarea
+                        ['furnished', 'semi-furnished', 'unfurnished']  # furnishingstatus
+                    ]))
                 ]
             )
 

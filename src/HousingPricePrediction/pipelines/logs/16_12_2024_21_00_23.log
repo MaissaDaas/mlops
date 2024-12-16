@@ -1,0 +1,24 @@
+[2024-12-16 21:00:26,181] 34 root - INFO - Data ingestion started
+[2024-12-16 21:00:26,184] 39 root - INFO - Dataset loaded into dataframe
+[2024-12-16 21:00:26,188] 44 root - INFO - Raw dataset is saved in artifacts folder
+[2024-12-16 21:00:26,189] 47 root - INFO - Dataset is splitted into Train & Test data
+[2024-12-16 21:00:26,193] 51 root - INFO - Train & Test dataset are saved in artifacts folder
+[2024-12-16 21:00:26,194] 53 root - INFO - Data ingestion completed
+[2024-12-16 21:00:26,199] 100 root - INFO - Train Dataframe Head : 
+    id  area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus    price
+0  374  3520         2          2        1      yes        no      yes              no              no        0       no   semi-furnished  3640000
+1  178  7085         3          1        1      yes       yes      yes              no              no        2      yes   semi-furnished  5229000
+2  981  2145         3          1        2      yes        no      yes              no              no        0      yes        furnished  3290000
+3  751  5800         2          1        1      yes       yes      yes              no             yes        0       no   semi-furnished  4900000
+4   55  6000         3          1        2      yes        no       no              no             yes        1       no      unfurnished  7350000
+[2024-12-16 21:00:26,201] 101 root - INFO - Test Dataframe Head : 
+    id  area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus     price
+0  950  3060         3          1        1      yes        no       no              no              no        0       no      unfurnished   3465000
+1  547  9960         3          2        2      yes        no      yes              no              no        2      yes   semi-furnished  12250000
+2  762  6862         3          1        2      yes        no       no              no             yes        2      yes        furnished   4830000
+3  320  4320         3          1        2      yes        no       no              no              no        2      yes        furnished   4060000
+4  268  4950         4          1        2      yes        no       no              no             yes        0       no   semi-furnished   4382000
+[2024-12-16 21:00:26,201] 33 root - INFO - Data Transformation initiated
+[2024-12-16 21:00:26,201] 56 root - INFO - Pipeline Initiated
+[2024-12-16 21:00:26,201] 92 root - ERROR - Exception occurred in the transform_data method
+[2024-12-16 21:00:26,201] 145 root - ERROR - Exception occurred in the initiate_data_transformation method
