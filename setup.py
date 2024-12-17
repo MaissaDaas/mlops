@@ -6,10 +6,10 @@ with open('README.md', 'r', encoding='utf-8') as f:
    
 
 __version__ = "4.0.1"
-REPO_NAME = "housing_price_prediction"
+REPO_NAME = "mlops"
 PKG_NAME= "uniqueHousePricePrediction"
-AUTHOR_USER_NAME = "Asang"
-AUTHOR_EMAIL = "asangkumar6666@gmail.com"
+AUTHOR_USER_NAME = "MaissaDaas"
+AUTHOR_EMAIL = "maissa.daas@itbs.com"
 
 setup(
     name=PKG_NAME,

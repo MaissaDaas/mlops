@@ -1,0 +1,16 @@
+[2024-12-17 11:29:37,290] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.10.177:8000
+[2024-12-17 11:29:37,290] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-12-17 11:30:21,480] 97 werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 11:30:21] "GET / HTTP/1.1" 200 -
+[2024-12-17 11:30:21,785] 97 werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 11:30:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-17 11:30:23,751] 97 werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 11:30:23] "GET /predict HTTP/1.1" 200 -
+[2024-12-17 11:30:46,449] 77 root - INFO - Custom input is converted to Dataframe: 
+     area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus
+0  1500.0       4.0        1.0      2.0      yes       yes      yes             yes              no      1.0      yes        furnished
+[2024-12-17 11:30:46,449] 14 root - INFO - Prediction Pipeline initiated
+[2024-12-17 11:30:46,449] 78 root - INFO - Object read and loaded from artifacts/preprocessor.pkl
+[2024-12-17 11:30:46,584] 78 root - INFO - Object read and loaded from artifacts/model.pkl
+[2024-12-17 11:30:46,596] 25 root - INFO - Predicted value: [5701643.13652893]
+[2024-12-17 11:30:46,601] 97 werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 11:30:46] "POST /predict HTTP/1.1" 200 -

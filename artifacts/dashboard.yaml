@@ -1,5 +1,6 @@
 dashboard:
-  explainerfile: explainer.joblib
+  explainerfile: artifacts/explainer.joblib
+
   params:
     title: Housing Price Explainer Dashboard
     name: null

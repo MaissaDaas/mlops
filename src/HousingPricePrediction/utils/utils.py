@@ -18,6 +18,7 @@ def load_dataframe(path: str, filename: str):
     return pd.read_csv(Path(os.path.join(path, filename)))
 
 
+# Sauvegarder un objet Python dans un fichier au format binaire (pickle).
 def save_object(file_path, obj):
     try:
         dir_path = os.path.dirname(file_path)
@@ -33,6 +34,7 @@ def save_object(file_path, obj):
         raise CustomException(e, sys)
 
 
+# Évaluer plusieurs modèles de machine learning sur des ensembles de données d'entraînement et de test.
 def evaluate_model(X_train, y_train, X_test, y_test, models: dict) -> dict:
     try:
         report = {}
@@ -69,6 +71,7 @@ def evaluate_model(X_train, y_train, X_test, y_test, models: dict) -> dict:
         raise CustomException(e, sys)
 
 
+# Charger un objet Python à partir d'un fichier pickle.
 def load_object(file_path):
     try:
         with open(file_path, 'rb') as file_obj:
